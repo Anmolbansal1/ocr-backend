@@ -3,7 +3,7 @@ from collections import OrderedDict
 import torch
 from torch import nn
 
-from crnn import CRNN
+from .crnn import CRNN
 
 def load_weights(target, source_state):
     new_dict = OrderedDict()

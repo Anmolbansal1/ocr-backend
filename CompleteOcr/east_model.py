@@ -12,7 +12,8 @@ class EAST:
 		self.min_confidence = 0.5
 		self.width = 320
 		self.height = 320
-		self.net = cv2.dnn.readNet('./frozen_east_text_detection.pb')
+		self.net = cv2.dnn.readNet('./CompleteOcr/frozen_east_text_detection.pb')
+		print("Done east")
 	
 	def predict(self, image):
 		orig = image.copy()
